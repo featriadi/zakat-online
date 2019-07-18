@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard','DashboardController@index');
-Route::get('/kalkulatoremas','ZakatController@kalkulatoremas');
+Route::get('/kalkulatorzakat','ZakatController@kalkulatorzakat');
+Route::get('/kalkulatorzakat/emas','ZakatController@kalkulatorzakatemas');
 Route::get('/tentangzakat','DashboardController@tentangzakat');
 Route::get('/kontak','DashboardController@kontak');

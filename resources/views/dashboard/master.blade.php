@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Zakat Online - Solusi Zakat Modern</title>
+		<title>Zakat Online | Solusi Zakat Modern</title>
 		<link rel="stylesheet" href="{{asset('homepage/css/style.css')}}" type="text/css" />
 		<script src="{{asset('homepage/js/jquery.min.js')}}"></script>
 		<script src="{{asset('homepage/js/elsyifa.js')}}"></script>
@@ -15,7 +15,7 @@
 					<a href="{{url('/dashboard')}}" class="logo">Zakat Online</a>
 					<nav id="nav">
 						<a href="{{url('/tentangzakat')}}">Tentang Zakat</a>
-						<a href="{{url('/kalkulatoremas')}}">Kalkulator Zakat</a>
+						<a href="{{url('/kalkulatorzakat')}}">Kalkulator Zakat</a>
 						<a href="{{url('/kontak')}}">Kontak</a>
 					</nav>
 				</div>
@@ -23,6 +23,7 @@
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 		
 		@yield('content')
+		
 		<!-- Footer -->
     	<section id="footer">
 			<div class="inner">
