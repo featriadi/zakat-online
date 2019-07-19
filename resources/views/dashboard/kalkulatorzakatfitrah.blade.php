@@ -26,7 +26,8 @@
 									</div>
 									<div class="7u$ 12u$(xsmall)">
 										<section>
-										<h3>Zakat Emas dan Perak</h3>
+										<h3>Zakat Fitrah</h3>
+										<!--
 										<div class="table-wrapper">
 											<table>
 												<thead>
@@ -90,6 +91,7 @@
 												</thead>
 											</table>
 										</div>
+										-->
 									</section>
 									</div>
 								</div>

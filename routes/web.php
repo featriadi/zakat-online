@@ -17,6 +17,10 @@ Route::get('/', function () {
 
 Route::get('/dashboard','DashboardController@index');
 Route::get('/kalkulatorzakat','ZakatController@kalkulatorzakat');
+Route::get('/kalkulatorzakat/mal','ZakatController@kalkulatorzakatmal');
+Route::get('/kalkulatorzakat/fitrah','ZakatController@kalkulatorzakatfitrah');
+Route::get('/kalkulatorzakat/penghasilan','ZakatController@kalkulatorzakatpenghasilan');
+Route::get('/kalkulatorzakat/pertanian','ZakatController@kalkulatorzakatpertanian');
 Route::get('/kalkulatorzakat/emas','ZakatController@kalkulatorzakatemas');
 Route::get('/tentangzakat','DashboardController@tentangzakat');
 Route::get('/kontak','DashboardController@kontak');
