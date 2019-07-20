@@ -212,6 +212,19 @@ zc_ternak_kambing = function () {
 	$('#keterangan_kambing').html('Kambing SUDAH mencapai nishab. Dikenakan KEWAJIBAN ZAKAT.');
 }
 
+/* zakat fitrah */
+zc_fitrah = function(){
+	harga_beras = $('#beras').val();
+	harga_beras = $.elsyifaJS.indonesianNumberToFloat(harga_beras);
+
+	jumlah_orang = $('#orang').val();
+	jumlah_orang = $.elsyifaJS.indonesianNumberToFloat(jumlah_orang);
+
+	total_zakat = (3.5 * harga_beras * jumlah_orang)/100;
+
+	$('#zakat_fitrah').val($.elsyifaJS.toIndonesianNumber(total_zakat));
+}
+
 /* zakat emas dan perak */
 zc_emas_perak = function () {
 	emas = $('#emas').val();
@@ -248,6 +261,20 @@ zc_emas_perak = function () {
 	$('#zakat_total_uang').val($.elsyifaJS.toIndonesianNumber(zakat_total_uang));
 }
 
+/* zakat penghasilan*/
+zc_penghasilan = function(){
+	gaji = $('#gaji').val();
+	gaji = $.elsyifaJS.indonesianNumberToFloat(gaji);
+
+	if (gaji < 3656800) {
+		$('#zakat_gaji').val('0');
+		$('#keterangan_gaji').html('Gaji BELUM mencapai nishab. Tidak dikenakan kewajiban zakat.');
+	} else {
+		zakat_gaji = (2.5 * gaji)/100;
+		$('#zakat_gaji').val($.elsyifaJS.toIndonesianNumber(zakat_gaji));
+		$('#keterangan_gaji').html('Gaji SUDAH mencapai nishab. Dikenakan KEWAJIBAN ZAKAT.');
+	}
+} 
 
 /* zakat pertanian */
 zc_pertanian = function () {

@@ -27,7 +27,6 @@
 									<div class="7u$ 12u$(xsmall)">
 										<section>
 										<h3>Zakat Fitrah</h3>
-										<!--
 										<div class="table-wrapper">
 											<table>
 												<thead>
@@ -37,61 +36,22 @@
 												</thead>
 												<tbody>
 													<tr>
-														<td>Emas</td>
-														<td class="value_cols"><input type="text" id="emas" class="input_angka" style="width:100px" onkeyup="validasiAngka(this); zc_emas_perak();" onblur="validasi_numstring(this);" /> gram</td>
+														<td>Harga beras yang dikonsumsi</td>
+														<td class="value_cols">Rp<input type="text" id="beras" class="input_angka" onkeyup="validasiAngka(this); zc_fitrah();" onblur="validasi_numstring(this);"/></td>
 													</tr>
 													<tr>
-														<td>Perak</td>
-														<td class="value_cols"><input type="text" id="perak" class="input_angka" style="width:100px" onkeyup="validasiAngka(this); zc_emas_perak();" onblur="validasi_numstring(this);" /> gram</td>
-													</tr>
-												</tbody>
-												<thead>
-													<tr>
-														<th>ZAKAT EMAS/PERAK</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Zakat Emas</td>
-														<td class="value_cols"><input type="text" id="zakat_emas" class="input_angka" style="width:100px" disabled="disabled" /> gram</td>
-													</tr>
-													<tr>
-														<td>Zakat Perak</td>
-														<td class="value_cols"><input type="text" id="zakat_perak" class="input_angka" style="width:100px" disabled="disabled" /> gram</td>
-													</tr>
-												</tbody>
-												<thead>
-													<tr>
-														<th>ZAKAT UANG</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Harga 1 gram emas</td>
-														<td class="value_cols">Rp <input type="text" id="harga_emas" class="input_angka" onkeyup="validasiAngka(this); zc_emas_perak();" onblur="validasi_numstring(this);" value="737.000,00" /></td>
-													</tr>
-													<tr>
-														<td>Harga 1 gram perak</td>
-														<td class="value_cols">Rp <input type="text" id="harga_perak" class="input_angka" onkeyup="validasiAngka(this); zc_emas_perak();" onblur="validasi_numstring(this);" value="13.200,00" /></td>
-													</tr>
-													<tr>
-														<td>Zakat Emas</td>
-														<td class="value_cols">Rp <input type="text" id="zakat_emas_uang" class="input_angka" disabled="disabled" /></td>
-													</tr>
-													<tr>
-														<td>Zakat Perak</td>
-														<td class="value_cols">Rp <input type="text" id="zakat_perak_uang" class="input_angka" disabled="disabled" /></td>
+														<td>Jumlah orang yang dizakatkan</td>
+														<td class="value_cols"><input type="text" id="orang" class="input_angka" style="width:100px" onkeyup="validasiAngka(this); zc_fitrah();" onblur="validasi_numstring(this);" />Orang</td>
 													</tr>
 												</tbody>
 												<thead>
 												<tr>
 													<th class="label_cols">Total</th>
-													<th class="value_cols">Rp <input type="text" id="zakat_total_uang" class="input_angka" disabled="disabled" /></th>
+													<th class="value_cols">Rp <input type="text" id="zakat_fitrah" class="input_angka" disabled="disabled" /></th>
 												</tr>
 												</thead>
 											</table>
 										</div>
-										-->
 									</section>
 									</div>
 								</div>
