@@ -16,7 +16,7 @@
 					<nav id="nav">
 						<a href="{{url('/tentangzakat')}}">Tentang Zakat</a>
 						<a href="{{url('/kalkulatorzakat')}}">Kalkulator Zakat</a>
-						<a href="{{url('/kontak')}}">Kontak</a>
+						<!-- <a href="{{url('/kontak')}}">Kontak</a> -->
 					</nav>
 				</div>
 			</header>
@@ -28,7 +28,7 @@
     	<section id="footer">
 			<div class="inner">
 				<div class="copyright">
-					&copy; Copyright: <a href="https://templated.co/">Zakat Online</a>. Images <a href="https://unsplash.com/">Unsplash</a>
+					&copy; Copyright: <a href="{{url('/dashboard')}}">Zakat Online</a>. Images <a href="https://unsplash.com/">Unsplash</a>
 				</div>
 			</div>
 		</section>

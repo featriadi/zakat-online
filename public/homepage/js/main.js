@@ -220,7 +220,7 @@ zc_fitrah = function(){
 	jumlah_orang = $('#orang').val();
 	jumlah_orang = $.elsyifaJS.indonesianNumberToFloat(jumlah_orang);
 
-	total_zakat = (3.5 * harga_beras * jumlah_orang)/100;
+	total_zakat = 3.5 * harga_beras * jumlah_orang;
 
 	$('#zakat_fitrah').val($.elsyifaJS.toIndonesianNumber(total_zakat));
 }

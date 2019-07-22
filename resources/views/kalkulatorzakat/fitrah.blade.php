@@ -37,7 +37,7 @@
 												<tbody>
 													<tr>
 														<td>Harga beras yang dikonsumsi</td>
-														<td class="value_cols">Rp<input type="text" id="beras" class="input_angka" onkeyup="validasiAngka(this); zc_fitrah();" onblur="validasi_numstring(this);"/></td>
+														<td class="value_cols">Rp<input type="text" id="beras" class="input_angka" onkeyup="validasiAngka(this); zc_fitrah();" onblur="validasi_numstring(this);"/>/liter</td>
 													</tr>
 													<tr>
 														<td>Jumlah orang yang dizakatkan</td>
