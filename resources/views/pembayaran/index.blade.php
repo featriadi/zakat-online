@@ -48,6 +48,9 @@
 															<input type="text" name="jumlah" class="input_angka"required="required" onkeyup="validasiAngka(this);" onblur="validasi_numstring(this);" placeholder="Jumlah Zakat" />
 														</div>
 														<div class="12u$">
+															<input type="hidden" name="user_id" value="{{ Auth::user()->id }}"required="required"/>
+														</div>
+														<div class="12u$">
 															<ul class="actions">
 																<li><input type="submit" value="Tunaikan" class="special" /></li>
 															</ul>

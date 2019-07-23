@@ -37,7 +37,9 @@
 												<th>Atas Nama</th>
 												<th>Jumlah</th>
 												<th>Status</th>
+												@if(Auth::user()->role == 'admin')
 												<th>Action</th>
+												@endif
 											</tr>
 											<?php $hitung = 1; ?>
 											@foreach($pembayaran as $p)
@@ -47,7 +49,12 @@
 												<td>{{ $p->atas_nama }}</td>
 												<td>{{ $p->jumlah }}</td>
 												<td>{{ $p->status }}</td>
-												<td>edit delete</td>
+												@if(Auth::user()->role == 'admin')
+												<td>
+													<a href="/pembayaran/edit/{{ $p->id }}">Edit</a>
+													<a href="/pembayaran/hapus/{{ $p->id }}">Delete</a>
+												</td>
+												@endif
 											</tr>
 											<?php $hitung++; ?>
 											@endforeach

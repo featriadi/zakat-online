@@ -23,6 +23,9 @@ Route::get('/tentangzakat','DashboardController@tentangzakat');
 Route::get('/pembayaran','PembayaranController@pembayaran');
 Route::get('/daftarpembayaran','PembayaranController@daftarpembayaran');
 Route::post('/pembayaran/store','PembayaranController@store');
+Route::get('/pembayaran/edit/{id}','PembayaranController@edit');
+Route::post('/pembayaran/update','PembayaranController@update');
+Route::get('/pembayaran/hapus/{id}','PembayaranController@hapus');
 
 Route::get('/kalkulatorzakat','ZakatController@kalkulatorzakat')->name('kalkulatorzakat');
 Route::get('/kalkulatorzakat/mal','ZakatController@kalkulatorzakatmal')->name('kalkulatorzakatmal');
