@@ -32,11 +32,13 @@ class PembayaranController extends Controller
 	
 	public function edit($id)
 	{
+		$zakats = Zakat::all();
+
 		// mengambil data pegawai berdasarkan id yang dipilih
 		$pembayaran = DB::table('pembayaran')->where('id',$id)->get();
 
 		// passing data pegawai yang didapat ke view edit.blade.php
-		return view('pembayaran.edit',['pembayaran' => $pembayaran]);
+		return view('pembayaran.edit',['pembayaran' => $pembayaran],['zakats' => $zakats]);
 	}
 
 	public function update(Request $request)
@@ -63,6 +65,8 @@ class PembayaranController extends Controller
 	}
 
     public function daftarpembayaran(){
+    	$zakats = DB::table('zakats')->get();
+
     	if (Auth::user()->role == 'admin') {
     		# code...
     		$pembayaran = DB::table('pembayaran')->get();
@@ -75,6 +79,6 @@ class PembayaranController extends Controller
     	}
     	
     	// mengirim data pembayaran ke view index
-    	return view('pembayaran.daftar',['pembayaran' => $pembayaran]);
+    	return view('pembayaran.daftar',['pembayaran' => $pembayaran],['zakats' => $zakats]);
     }
 }

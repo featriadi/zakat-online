@@ -38,21 +38,33 @@
 												<th>Jumlah</th>
 												<th>Status</th>
 												@if(Auth::user()->role == 'admin')
-												<th>Action</th>
+													<th>Action</th>
 												@endif
 											</tr>
 											<?php $hitung = 1; ?>
 											@foreach($pembayaran as $p)
 											<tr>
 												<td>{{ $hitung }}</td>
-												<td>{{ $p->zakat_id }}</td>
+												<td>
+													@foreach($zakats as $z)
+														@if( $p->zakat_id == $z->id )
+															{{ $z->nama_zakat }}
+														@endif
+													@endforeach
+												</td>
 												<td>{{ $p->atas_nama }}</td>
 												<td>{{ $p->jumlah }}</td>
-												<td>{{ $p->status }}</td>
+												<td>
+													@if($p->status == 0)
+														Belum Lunas
+													@elseif($p->status == 1)
+														Lunas
+													@endif
+												</td>
 												@if(Auth::user()->role == 'admin')
 												<td>
-													<a href="/pembayaran/edit/{{ $p->id }}">Edit</a>
-													<a href="/pembayaran/hapus/{{ $p->id }}">Delete</a>
+													<a href="/pembayaran/edit/{{ $p->id }}">Ubah</a>
+													<a href="/pembayaran/hapus/{{ $p->id }}">Hapus</a>
 												</td>
 												@endif
 											</tr>
