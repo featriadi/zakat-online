@@ -12,15 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::get('/dashboard','DashboardController@index');
-Route::get('/kalkulatorzakat','ZakatController@kalkulatorzakat');
-Route::get('/kalkulatorzakat/mal','ZakatController@kalkulatorzakatmal');
-Route::get('/kalkulatorzakat/fitrah','ZakatController@kalkulatorzakatfitrah');
-Route::get('/kalkulatorzakat/penghasilan','ZakatController@kalkulatorzakatpenghasilan');
-Route::get('/kalkulatorzakat/pertanian','ZakatController@kalkulatorzakatpertanian');
-Route::get('/kalkulatorzakat/emas','ZakatController@kalkulatorzakatemas');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/tentangzakat','DashboardController@tentangzakat');
-Route::get('/kontak','DashboardController@kontak');
+
+Route::get('/pembayaran','PembayaranController@pembayaran');
+Route::get('/daftarpembayaran','PembayaranController@daftarpembayaran');
+Route::post('/pembayaran/store','PembayaranController@store');
+
+Route::get('/kalkulatorzakat','ZakatController@kalkulatorzakat')->name('kalkulatorzakat');
+Route::get('/kalkulatorzakat/mal','ZakatController@kalkulatorzakatmal')->name('kalkulatorzakatmal');
+Route::get('/kalkulatorzakat/fitrah','ZakatController@kalkulatorzakatfitrah')->name('kalkulatorzakatfitrah');
+Route::get('/kalkulatorzakat/penghasilan','ZakatController@kalkulatorzakatpenghasilan')->name('kalkulatorzakatpenghasilan');
+Route::get('/kalkulatorzakat/pertanian','ZakatController@kalkulatorzakatpertanian')->name('kalkulatorzakatpertanian');
+Route::get('/kalkulatorzakat/emas','ZakatController@kalkulatorzakatemas')->name('kalkulatorzakatemas');

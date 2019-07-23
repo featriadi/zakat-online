@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class ZakatController extends Controller
-{	
-	public function kalkulatorzakat(){
+{
+    //
+    public function kalkulatorzakat(){
     	return view('kalkulatorzakat.index');
     }
     public function kalkulatorzakatmal(){
