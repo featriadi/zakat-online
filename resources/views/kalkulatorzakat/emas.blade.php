@@ -27,6 +27,9 @@
 									<div class="7u$ 12u$(xsmall)">
 										<section>
 										<h3>Zakat Emas dan Perak</h3>
+										Zakat emas dan perak merupakan zakat yang wajib dikeluarkan oleh seorang muslim yang mempunyai emas dan perak bila telah mencapai nisab dan haul.
+										<br>
+										<br>
 										<div class="table-wrapper">
 											<table>
 												<thead>

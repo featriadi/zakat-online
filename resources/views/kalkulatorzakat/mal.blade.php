@@ -29,7 +29,6 @@
 										<h3>Zakat Mal</h3>
 										Untuk menghitung zakat harta yang telah tersimpan selama <strong>1 tahun hijriyah</strong>. Metode perhitungannya sama dengan zakat emas atau perak. Yaitu, dengan nisab senilai <strong>85 gram emas atau 595 gram perak</strong>. Sedangkan zakatnya adalah sebesar <strong>2,5%</strong>.
 										<br /><br />
-										
 										<div class="table-wrapper">
 											<table>
 												<thead>

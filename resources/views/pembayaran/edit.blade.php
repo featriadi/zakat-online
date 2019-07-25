@@ -42,7 +42,7 @@
 		<!--Status <input type="text" required="required" name="status" value="{{ $p->status }}">-->
 		
 		<div class="12u$">
-			Status Palsu
+			Status
 			<div class="select-wrapper">
 				<select name="status" required="required">
 					@if($p->status == 0)

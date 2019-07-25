@@ -27,6 +27,8 @@
 									<div class="7u$ 12u$(xsmall)">
 										<section>
 										<h3>Zakat Fitrah</h3>
+										Zakat fitrah dapat dibayar dengan setara 3,5 liter (2,5 kilogram) makanan pokok dari daerah yang bersangkutan.
+										<br /><br />
 										<div class="table-wrapper">
 											<table>
 												<thead>

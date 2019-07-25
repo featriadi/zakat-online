@@ -27,6 +27,8 @@
 									<div class="7u$ 12u$(xsmall)">
 										<section>
 										<h3>Zakat Penghasilan</h3>
+										Standar nishab yang digunakan adalah sebesar Rp5.240.000,- per bulan.
+										<br /><br />
 										<div class="table-wrapper">
 											<table>
 												<thead>

@@ -18,7 +18,7 @@
 						<a href="{{url('/kalkulatorzakat')}}">Kalkulator Zakat</a>
 
 						@guest    
-                        	<a class="nav-link" href="{{ route('login') }}">{{ __('Masuk') }}</a>
+                        	<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             @if (Route::has('register'))
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Daftar') }}</a>
                             @endif

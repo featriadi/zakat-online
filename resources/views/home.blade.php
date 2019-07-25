@@ -11,7 +11,9 @@
                     </div>
                 </section>
 
+        
         <!-- Three -->
+        <!--
         <section id="three">
                     <div class="inner">
                         <article>
@@ -52,11 +54,13 @@
                         </article>
                     </div>
                 </section>
-
+                -->
           <!-- Main -->
+                <!--
                 <section id="main">
-                    <div class="inner">
+                    <div class="inner"> -->
                         <!-- Table -->
+                            <!--
                             <section>
                                 <h2>Tentang Zakat</h2>
                                 <div class="table-wrapper">
@@ -89,16 +93,18 @@
                                                 <td>Vitae integer tempus condimentum.</td>
                                                 <td>19.99</td>
                                             </tr>
-                                        </tbody>
+                                        </tbody> -->
                                         <!--<tfoot>
                                             <tr>
                                                 <td colspan="2"></td>
                                                 <td></td>
                                             </tr>
                                         </tfoot>-->
+                                        <!--
                                     </table>
                                 </div>
                             </section>
                     </div>
                 </section>
+                -->
         @endsection
